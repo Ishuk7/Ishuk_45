@@ -1,1 +1,30 @@
-45_Days_Of_Code
+//45_Days_Of_Code
+//Day 1 
+//18 September 2023
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   int t;
+   cout << "Doctor prescripted water level list";
+   cout << endl;
+
+   cout<<"Enter Number";
+   cin >> t;
+   while(t--)
+  {
+     int x;
+     cin >> x;
+
+     if((x>2000) || (x=2000))
+     cout << "Yes";
+
+     else
+     cout << "No";
+  }
+
+cout << endl;
+return 0;
+}
