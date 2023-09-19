@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int x, y, z, t, i=0;
+    cout<<"Enter the number of test : ";
+    cin>>t;
+    while(i<t) 
+    {
+        i++;
+        cout<<"Enter the value of 5 rupees coin : ";
+        cin>>x;
+        cout<< endl;
+        
+        cout<<"Enter the value of 10 rupees of coin : ";
+        cin>>y;
+        cout<<endl;
+        
+        cout<<"Enter the price of chocalate : ";
+        cin>>z;
+        cout<<endl;
+        
+        int p;
+        p=(x*5+y*10)/z;
+        cout<<"The number of chocalates you can buy : "<<p;
+        cout<<endl;
+        cout<<"___________________________________________"<<endl;
+    }
+
+return 0;
+}
