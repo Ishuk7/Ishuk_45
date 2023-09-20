@@ -1,0 +1,38 @@
+//Day 3 at 45 Days Of Coding 
+
+#include <iostream> 
+using namespace std;
+
+int main() 
+{
+    int t;
+    cout << "Enter the number of test needed to run : ";
+    cin >> t;
+    while(t>0)
+    {
+        t--;
+        int y,x; /*x= number of students 
+             y=number of seats available*/
+        cout << "Number of total students : ";
+        cin >> x;
+        cout << endl;
+        
+        cout << "Number of available seats : ";
+        cin >> y;
+        cout << endl;
+        
+        if(x>y)
+        {
+            cout << "Number of seats needed are : ";
+            cout << x-y << endl;
+        }
+        
+        else
+        {
+            cout<<"No extra seats needed." <<endl;
+
+        }
+        cout << "____________________________________" << endl;
+    }
+    return 0;
+}
