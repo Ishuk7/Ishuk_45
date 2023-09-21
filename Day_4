@@ -1,0 +1,38 @@
+// Day 4 
+//45 Days Of Coding 
+// checking the earning got by selling chocolates including  profit
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int t;
+    cout << "Enter number of test to run : ";
+    cin >> t;
+    
+    while(t--)
+    {
+        int x, y, sum;
+        cout << "Number of chocalates to be sold : ";
+        cin >> x;
+        
+        cout << "Number of chocalates got sold : ";
+        cin >> y;
+        
+        if((x<y) || (x=y))
+        {
+            sum= x+((y-x)*2);
+            //sum=x+profit;
+            cout << "Your total earning is : " << sum << endl;
+        }
+        else
+        {
+            cout << "Your total earning is : " << x;
+        }
+        
+        cout << "________________________________________" << endl;
+    }
+    
+    return 0;
+}
