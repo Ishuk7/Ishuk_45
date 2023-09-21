@@ -1,0 +1,43 @@
+// Day 4
+//45 Days Of Coding 
+//Tough question 
+//To find the head start given by hare to tortoise in a race
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int t;
+    cout << "Number of test cases to be run : ";
+    cin >> t;
+    while(t--)
+    {
+        int l, win;
+        float v1, v2;
+        
+        cout << "Enter the length of racetrack (meter) : ";
+        cin >> l;
+        
+        cout << "Time took by tortoise to cover (seconds) : ";
+        cin >> v1;
+        
+        cout << "Time took by Hare to cover (seconds) : ";
+        cin >> v2;
+        
+        if(v2<v1)
+        {
+            win=((v1-1)-v2);
+            cout << "Hare gave head start of total (seconds) : " << win;
+            cout << endl;
+            
+        }
+        else
+        {
+            cout << "-1" << endl;
+        }
+        cout << "____________________________________" << endl;
+    }
+    
+    return 0;
+}
