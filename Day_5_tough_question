@@ -1,0 +1,30 @@
+// Day_5
+// 45 Days Of Code
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int t,i,j;
+	cout << "Enter the number of test cases to be run : ";
+	cin>>t;
+	
+	while(t--)
+	{
+		int n;
+		cout << "Enter the number of hoops  : ";
+		cin>>n;
+		cout << endl;
+		
+		j=n;
+		for(i=1;i<=n;i++)
+		{
+			if(i==j)
+			cout<< "Number of rounds around the hoop are : " << i<< endl;
+			j--;
+		}
+		cout << "_____________________________________" << endl;
+	}
+	return 0;
+}
