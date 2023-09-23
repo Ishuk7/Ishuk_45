@@ -1,0 +1,44 @@
+// Day_6
+// 45 Days Of Code
+
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+bool Divi(string s) 
+{
+    int last_digit = s.back() - '0';
+    return (last_digit == 0 || last_digit == 5);
+}
+
+int main() 
+{
+    int t;
+    cout << "Enter the number of test needed to be run : ";
+    cin >> t; 
+
+    while (t--) 
+    {
+        int d;
+        string n;
+        cout << "Number of integers to be inserted : ";
+        cin >> d;
+        
+        //string n;
+        cout << "Enter the number : ";
+        cin >> n;
+
+        if (Divi(n)) 
+        {
+            cout << "Yes" << endl;
+        } 
+        else 
+        {
+            cout << "No" << endl;
+        }
+        cout << "___________________________________" << endl;
+    }
+
+    return 0;
+}
