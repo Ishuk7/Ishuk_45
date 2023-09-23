@@ -1,0 +1,31 @@
+// Day_6
+// 45 Days Of Code
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int cars_needed(int x) 
+{
+    return ceil((double)x / 4);
+}
+
+int main() {
+    int t;
+    cout << "Number of test cases to be run : ";
+    cin >> t;
+
+    while (t--) {
+        int n, cars;
+        cout << "Number of passengers : ";
+        cin >> n; 
+
+        cars = cars_needed(n);
+        cout << "Total cars required : " << cars << endl; 
+        
+        cout << "________________________________" << endl;
+    }
+
+    return 0;
+}
