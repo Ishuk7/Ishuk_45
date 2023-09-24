@@ -1,0 +1,35 @@
+// Day_7
+// 45 Days Of Code
+
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main() 
+{
+    int t;
+    cout << "Enter the number of test needed to be run : ";
+    cin >> t;
+
+    while (t--) 
+    {
+        int pa, pb, pc, sce1, sce2, max_p;
+        cout << "Number of people in region A : ";
+        cin >> pa;
+        
+        cout << "Number of people in region B : ";
+        cin >> pb;
+        
+        cout << "Number of people in region C : ";
+        cin >> pc;
+
+        sce2 = pb*2;
+        sce1 = min(pa, pc)*2 + pb;
+        max_p = max(sce1, sce2);
+
+        cout << max_p << endl;
+        cout << "___________________________________" << endl;
+    }
+
+    return 0;
+}
