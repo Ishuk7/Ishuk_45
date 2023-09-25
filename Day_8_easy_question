@@ -1,0 +1,26 @@
+//Day 8
+//45 Days Of Days
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() 
+{
+	int t;
+	cout << "Enter the number of test cases to be run : ";
+	cin >> t;
+	while(t--)
+	{
+		int x,y,a;
+		cout << "Liter of water in geyser : ";
+		cin >> x;
+		
+		cout << "Liter of water a bucket contain : ";
+		cin >> y;
+		a=x/(y*2);
+		cout << a <<endl;
+		cout << "_________________________________" << endl;
+	}
+	return 0;
+}
