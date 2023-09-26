@@ -1,0 +1,31 @@
+//Day 9
+//45 Days Of Code
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cout << "Enter the number of test cases to be run : ";
+    cin >> t; 
+    
+    while (t--) 
+    {
+        int w[5], P;
+        
+        cin >> w[0] >> w[1] >> w[2] >> w[3] >> w[4] >> P; 
+        
+        int total_hours = w[0] + w[1] + w[2] + w[3] + w[4];
+        
+        if (total_hours * P >= 120) 
+        {
+            cout << "No" << endl; 
+        } 
+        else 
+        {
+            cout << "Yes" << endl; 
+        }
+    }
+    
+    return 0;
+}
