@@ -1,0 +1,48 @@
+//Day 10
+//45 Days Of Code
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int t;
+    cout << "Enter the number of test cases to be run : ";
+    cin >> t;
+    
+    while (t--)
+    {
+        int a, b, c, d, e;
+        cout << "Weight of bags that has to be checked-in : ";
+        cin >> a >> b ;
+        
+        cout << "Weight of a carry bag : ";
+        cin >> c;
+        
+        cout << "Restricted weight needed to be checked-in : ";
+        cin >> d;
+        
+        cout << "Restricted weight for a carry bag : ";
+        cin >> e;
+        
+        if (a+b<d)
+        {
+            if(c<e)
+            {
+                cout << "You can check in : ";
+            }
+            else
+            {
+                cout << "Carry bag exceeds the limit";
+            }
+        }
+        else
+        {
+            cout << "Weight exceed!!";
+        }
+        cout << endl;
+        cout << "__________________________________" << endl;
+    }
+
+    return 0;
+}
