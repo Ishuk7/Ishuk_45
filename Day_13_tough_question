@@ -1,0 +1,30 @@
+//Day 13
+//45 Days Of Code
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int t;
+    cout << "Enter the number of test cases to be run : ";
+    cin >> t; 
+    
+    while (t--) 
+    {
+        int x, y, z;
+        cin >> x >> y >> z; 
+    
+        if (x + y == z || y + z == x || z + x == y) 
+        {
+            cout << "yes" << endl;
+        } 
+        else 
+        {
+            cout << "no" << endl;
+        }
+        cout << "__________" << endl;
+    }
+    
+    return 0;
+}
