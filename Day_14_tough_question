@@ -1,0 +1,33 @@
+// Day 14
+// 45 Days Of Code
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() 
+{
+    int t;
+    cout << "Enter the number of test cases to be run : ";
+    cin >> t; 
+    
+    while (t--) 
+    {
+        int n, tallest_m, height;
+        cin >> n;
+        
+        tallest_m = 0;
+        
+        for (int i = 0; i < n; i++) 
+        {
+            cin >> height; 
+            tallest_m = max(tallest_m, height);
+        }
+        
+        cout << "__________" << endl;
+        cout << tallest_m << endl;
+        cout << "__________" << endl;
+    }
+    
+    return 0;
+}
