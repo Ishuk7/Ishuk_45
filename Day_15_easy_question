@@ -1,0 +1,31 @@
+// Day 15
+// 45 Days Of Code
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int t;
+    cout << "Enter the number of test cases to be run : ";
+    cin >> t;
+    
+    while(t--)
+    {
+        int n, m, a, b;
+        cin >> n >> m; // n = candies     m = friends
+        a=n/m;
+        b=a%2;
+        
+        if(b==0)
+        {
+            cout << "Yes" << endl;
+        }
+        else 
+        {
+            cout << "No" << endl;
+        }
+        cout << "________" << endl;
+    }
+    return 0;
+}
