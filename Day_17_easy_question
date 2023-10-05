@@ -1,0 +1,33 @@
+//Day 17
+//45 Days Of Code
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int t;
+    cout << "Enter the number of test cases to be run : ";
+    cin >> t;
+    
+    while(t--)
+    {
+        int a, b, n1, n2;
+        cin >> a >> b;
+        
+        n1=7-a;
+        n2=7-b;
+
+        if(n1>n2)
+        {
+            cout << n2 << endl;
+        }
+        else
+        {
+            cout << n1 << endl;
+        }
+        cout << "________" << endl;
+    }
+
+    return 0;
+}
