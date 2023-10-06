@@ -1,0 +1,39 @@
+//Day 18
+//45 Days Of Code
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() 
+{
+    int t;
+    cout << "Enter the number of test cases to be run : ";
+    cin >> t;
+    
+    while (t--) 
+    {
+        int pa, pb, qa, qb, time_p, time_q;
+       // string result;
+        cin >> pa >> pb >> qa >> qb;
+        
+        time_p = min(pa, pb); 
+        time_q = min(qa, qb);
+        
+        if (time_p < time_q) 
+        {
+            cout <<  "P" << endl;
+        } 
+        if (time_q < time_p) 
+        {
+            cout << "Q" << endl;
+        } 
+        if (time_p == time_q)
+        {
+            cout << "Tie" << endl;
+        }
+        cout << "________" << endl;
+    }
+    
+    return 0;
+}
