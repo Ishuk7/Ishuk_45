@@ -1,0 +1,32 @@
+//Day 24
+//45 Days Of Code
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int t;
+    cout << "Enter the number of test cases to be run : ";
+    cin >> t;
+    
+    while(t--)
+    {
+        int x, y, n, result;
+        cin >> n >> x >> y; //n=questions
+        //x=marks
+        result = n*x;
+        
+        if(result>=y)
+        {
+            cout << "Yes" << endl;
+        }
+        else
+        {
+            cout << "No" << endl;
+        }
+        cout << "________" << endl;
+    }
+    
+    return 0;
+}
