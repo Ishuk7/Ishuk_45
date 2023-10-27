@@ -1,0 +1,28 @@
+//day 29
+//45 day of code
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int t;
+	cout << "Enter the number of times it needed to be run : ";
+	cin >> t;
+	
+	while(t--)
+	{
+	    int x,y;
+	    cin >> x >> y;
+	    if(x/y>20)
+	    {
+	        cout << "20" << endl;
+	    }
+	    else
+	    {
+	        cout << x/y << endl;
+	    }
+	    cout << "_______________" << endl;
+	}
+	return 0;
+}
