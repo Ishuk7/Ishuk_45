@@ -1,0 +1,34 @@
+//day 28
+//45 days of code
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t, w, x, y, z;
+	cout << "Enter the number of times it needed to be run : ";
+	cin >> t;
+	
+	while(t--) 
+	{
+	    cin >> w >> x >> y >> z;
+	    if ( w == (x + y + z)) 
+	    {
+	        cout << "YES" << endl;
+	    } 
+	    else if ( w == (x + y) || w == (x + z) || w == (y + z) ) 
+	    {
+	        cout << "YES" << endl;
+	    } 
+	    else if ( w == x || w == y || w == z ) 
+	    {
+	        cout << "YES" << endl;
+	    } 
+	    else 
+	    {
+	        cout << "NO" << endl;
+	    }
+	}
+	cout << "_____________" << endl;
+	return 0;
+}
