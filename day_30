@@ -1,0 +1,35 @@
+//day 30
+//45 days of code
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t,s,x,y,z;
+	cout << "Enter the number of times it needed to be run : ";
+	cin >> t;
+	
+	while (t--)
+	{
+	    cin >> s >> x >> y >> z;
+	    if ((x+y+z)>s)
+	    {
+	        if ((s-x)>z or (s-y)>z)
+	        {
+	            cout << 1;
+	        }
+	        else 
+	        {
+	            cout << 2;
+	        }
+	    }
+	    else 
+	    {
+	        cout << 0;
+	    }
+	    cout << endl;
+	    cout << "_______________" << endl;
+	}
+	
+	return 0;
+}
