@@ -1,0 +1,36 @@
+//day 34
+//45 days of code
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int t, a[1000];
+	cout << "Enter the number of times it needed to be run : ";
+	cin >> t;
+	
+	a[0]=2;
+	for(int i=1;i<1000;i++)
+	{
+	    a[i]=a[i-1]+7;
+	}
+	
+	while(t--)
+	{
+	    int n;
+	    cin >> n;
+	    int c=0,j=0;
+	    for(int i=0;i<n;i++)
+	    {
+	        if(a[j]==i+1)
+	        {
+	            c++;
+	            j++;
+	        }
+	    }
+	    cout << c << endl;
+	    cout << "____________" << endl;
+	}
+	return 0;
+}
