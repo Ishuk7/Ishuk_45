@@ -1,0 +1,29 @@
+//day 39
+//45 days of code
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int t;
+    cin >> t;
+    
+    while(t--)
+    {
+        int x, y, d, result;
+        cin >> x >> y >> d;
+        result=x-y;
+        if(result<=d)
+        {
+            cout << "Yes" << endl;
+        }
+        else
+        {
+            cout << "No" << endl;
+        }
+        cout << "______________" << endl;
+    }
+    
+    return 0;
+}
